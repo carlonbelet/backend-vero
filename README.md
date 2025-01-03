@@ -32,17 +32,19 @@ npx shadcn@latest add alert alert-dialog button breadcrumb calendar card checkbo
 
 In totaal 16 nieuwe bestanden toegevoegd
 
-````sh
-npm i @clerk/nextjs@5.0.1
+```sh
+npm install @clerk/nextjs@5.0.1
 ```
 
+Voor formuliervalidatie gebruiken we Zod als library
+
+```sh
+npm install zod
+```
 
 2. `npx prisma migrate dev`
 3. `npx prisma db seed`
 4. `npm run dev`
-```
-
-
 
 # Projectopgave
 
@@ -50,8 +52,8 @@ Voor het vak backend frameworks werk je **individueel** een project uit met Next
 Postgres.
 Tijdens de examenperiode ligt je jouw project mondeling toe.
 
-* 80% is te verdienen door te beantwoorden aan de *functionele vereisten*
-* 20% is te verdienen door een kwalitatieve, complexe en grote app te schrijven
+- 80% is te verdienen door te beantwoorden aan de _functionele vereisten_
+- 20% is te verdienen door een kwalitatieve, complexe en grote app te schrijven
 
 ## Toegestane hulpmiddelen
 
@@ -99,27 +101,27 @@ De kwaliteit van je code wordt beoordeeld op basis van onderstaande, **niet exha
 Omdat je voor een functionerend project al veel punten kunt verdienen (80%) wordt de kwaliteit en complexiteit van je
 code streng beoordeeld.
 
-* Naamgeving van variabelen
-    * Correct gebruik van enkelvoud/meervoud in de namen
-    * Duidelijke namen
-* Types
-    * Types van variabelen
-    * Types van functies
-* Gebruik van enums waar toepasbaar
-* Geen diep geneste callbacks
-* Gebruik van interfaces/types in de plaats van objecten met het any type
-* Consistentie in de code, geen mix van () =&gt; {} en function() {} in eenzelfde bestand.
-* Volgen van de linting regels die geconfigureerd zijn in ESLint en de stijlregels die geconfigureerd zijn voor
+- Naamgeving van variabelen
+  - Correct gebruik van enkelvoud/meervoud in de namen
+  - Duidelijke namen
+- Types
+  - Types van variabelen
+  - Types van functies
+- Gebruik van enums waar toepasbaar
+- Geen diep geneste callbacks
+- Gebruik van interfaces/types in de plaats van objecten met het any type
+- Consistentie in de code, geen mix van () =&gt; {} en function() {} in eenzelfde bestand.
+- Volgen van de linting regels die geconfigureerd zijn in ESLint en de stijlregels die geconfigureerd zijn voor
   Prettier (deze regels mogen aangepast worden, zolang je één bepaalde code-style aanhoud en niet alle regels op 'off'
   zet, is er geen probleem)
-* Geen hard gecodeerde gegevens
-* Opsplitsen in componenten waar nuttig
-* Leesbaarheid
-* Bruikbaarheid van de UI
-* Aanwezigheid van Suspense boundaries
-* Aanwezigheid van indicators tijdens het laden en bewerken van data
-* Features die boven onderstaande minimumvereisten uitsteken
-* Correct gebruikt van server en client components
+- Geen hard gecodeerde gegevens
+- Opsplitsen in componenten waar nuttig
+- Leesbaarheid
+- Bruikbaarheid van de UI
+- Aanwezigheid van Suspense boundaries
+- Aanwezigheid van indicators tijdens het laden en bewerken van data
+- Features die boven onderstaande minimumvereisten uitsteken
+- Correct gebruikt van server en client components
 
 ## Combinatie met Mobile Development
 
@@ -195,4 +197,6 @@ beoordeeld.
 
 De deadline voor de opdracht wordt gecommuniceerd via Canvas en de GitHub classroom.
 
-````
+```
+
+```
