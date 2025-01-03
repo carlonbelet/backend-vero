@@ -4,6 +4,7 @@
 
 Ik heb NPM gebruikt, maar PNPM werkt ook.
 Op mijn laptop staat geen webpack, dus de optie --turbopack is weggehaald uit package.json.
+Vervolgens moet er in package.json ook het commando pnpx seed aangepast worden.
 
 ## Aangepaste bestanden.
 
@@ -42,9 +43,36 @@ Voor formuliervalidatie gebruiken we Zod als library
 npm install zod
 ```
 
-2. `npx prisma migrate dev`
-3. `npx prisma db seed`
-4. `npm run dev`
+### Databank setup
+
+In de root van de app moeten we een compose.yaml toevoegen.
+Deze file wordt gebruikt om Docker aan te sturen.
+
+```sh
+docker compose up -d
+```
+
+```sh
+npm install prisma --save-dev
+npm install @prisma/client
+npm install @faker-js/faker
+```
+
+```sh
+npx prisma init --datasource-provider postgresql
+```
+
+npx prisma migrate dev --name init
+
+```bash
+npx prisma db push
+```
+
+npx prisma db seed
+
+```bash
+npx prisma studio
+```
 
 # Projectopgave
 
