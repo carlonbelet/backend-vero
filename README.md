@@ -1,3 +1,49 @@
+# Installatie stappen
+
+## NPM or PNPM
+
+Ik heb NPM gebruikt, maar PNPM werkt ook.
+Op mijn laptop staat geen webpack, dus de optie --turbopack is weggehaald uit package.json.
+
+## Aangepaste bestanden.
+
+Ik heb de volgende bestanden aangepast:
+
+- `package.json`
+- `next.config.mjs`
+
+## Accounts
+
+[clerk.com](https://dashboard.clerk.com/sign-in)
+veroniquevleugels@hotmail.com
+Help123.
+
+## Start your engines
+
+```sh
+npm install
+```
+
+In totaal worden 377 packages geïnstalleerd en audited 378 packages in 37s.
+
+```sh
+npx shadcn@latest add alert alert-dialog button breadcrumb calendar card checkbox dropdown-menu input label popover scroll-area select separator table textarea toast skeleton
+```
+
+In totaal 16 nieuwe bestanden toegevoegd
+
+````sh
+npm i @clerk/nextjs@5.0.1
+```
+
+
+2. `npx prisma migrate dev`
+3. `npx prisma db seed`
+4. `npm run dev`
+```
+
+
+
 # Projectopgave
 
 Voor het vak backend frameworks werk je **individueel** een project uit met Next.js, Tailwind, shadcn/ui, Prisma en
@@ -124,7 +170,7 @@ Voeg de inloggegevens voor elke gebruiker toe aan je readme.md bestand.
 
 ### Validatie
 
-De volledige applicatie moet voorzien worden van validatie aan de server- en clientzijde.  
+De volledige applicatie moet voorzien worden van validatie aan de server- en clientzijde.
 Je schrijft dus Zod schema's voor elke create, update en delete operatie en doet dit via de _extend_ en _omit_ methodes
 van Zod.
 Het is dus niet toegestaan om voor een create en update operatie een volledig nieuw Zod schema te schrijven.
@@ -147,5 +193,6 @@ beoordeeld.
 
 ## Deadline
 
-De deadline voor de opdracht wordt gecommuniceerd via Canvas en de GitHub classroom. 
+De deadline voor de opdracht wordt gecommuniceerd via Canvas en de GitHub classroom.
 
+````
